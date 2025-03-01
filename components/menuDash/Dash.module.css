@@ -1,0 +1,46 @@
+/* Dash.module.css */
+.menuLink {
+    /* color: #2563eb; */
+    /* สีของลิงก์ */
+    text-decoration: none;
+    position: relative;
+}
+
+.menuLink:hover {
+    color: #ffffff;
+    background: linear-gradient(to right, #2563eb, #60a5fa);
+    /* จาก blue-500 ไป blue-400 */
+    text-decoration: none;
+}
+
+
+.active {
+    color: #ffffff;
+    background-color: #15803d;
+    background: linear-gradient(to right, #3b82f6, #60a5fa);
+    text-decoration: none;
+}
+
+.hover {
+    color: #3b82f6;
+    background-color: #dbeafe;
+    text-decoration: none;
+
+}
+
+
+/* .menuLink::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 0%;
+    height: 2px;
+    background-color: #2563eb;
+    transition: width 0.3s ease;
+    transform: translateX(-50%);
+}
+
+.menuLink:hover::after {
+    width: 30%;
+} */

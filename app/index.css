@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ตั้งค่าฟอนต์ Prompt ทั่วทั้งโปรเจกต์ */
+body {
+    font-family: 'Prompt', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Prompt', sans-serif;
+}
+
+button,
+input,
+textarea {
+    font-family: 'Prompt', sans-serif;
+}
+
+
+.e-legend text,
+.e-pie-series text {
+    font-family: 'Prompt', sans-serif !important;
+
+}
+a {
+    color: #1675e0;
+    text-decoration: none !important;
+    position: relative;
+    /* เพื่อให้ pseudo-element อยู่ภายใน a */
+}
+
+a:hover {
+    color: #1675e0;
+    text-decoration: none !important;
+}

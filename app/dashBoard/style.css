@@ -1,0 +1,61 @@
+/* เพิ่ม CSS สำหรับ SelectPicker */
+.rs-picker-has-value .rs-btn .rs-picker-toggle-value,
+.rs-picker-has-value .rs-picker-toggle .rs-picker-toggle-value {
+    color: #343434 !important;
+    /* เปลี่ยนสีข้อความ */
+}
+
+.rs-picker-select-menu-item.rs-picker-select-menu-item-active :focus {
+    color: #343434 !important;
+    /* เปลี่ยนสี placeholder */
+}
+
+.custom-select .rs-picker-menu {
+    color: #000000 !important;
+    /* เปลี่ยนสีข้อความในเมนู dropdown */
+}
+
+@keyframes circle {
+    0% {
+        top: 60px;
+        height: 5px;
+        border-radius: 50px 50px 25px 25px;
+        transform: scaleX(1.7);
+    }
+
+    40% {
+        height: 20px;
+        border-radius: 50%;
+        transform: scaleX(1);
+    }
+
+    100% {
+        top: 0%;
+    }
+}
+
+.circle {
+    position: relative;
+    width: 12px;
+    height: 12px;
+    background-color: #3498db;
+    border-radius: 50%;
+    animation: circle 2s ease-in-out infinite;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.delay-0 {
+    animation-delay: 0s;
+}
+
+.delay-1 {
+    animation-delay: 0.2s;
+}
+
+.delay-2 {
+    animation-delay: 0.4s;
+}
+
+.delay-3 {
+    animation-delay: 0.6s;
+}

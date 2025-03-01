@@ -1,0 +1,31 @@
+ .navItem {
+     color: #374151;
+     padding: 0.5rem 1rem;
+     text-decoration: none;
+     border-radius: 0.375rem;
+     position: relative;
+     overflow: hidden;
+     transition: color 0.3s ease;
+ }
+
+ .navItem::after {
+     content: "";
+     position: absolute;
+     bottom: 0;
+     left: 50%;
+     width: 0;
+     height: 2px;
+     background-color: #2563eb;
+     transition: width 0.3s ease, left 0.3s ease;
+     transform: translateX(-50%);
+ }
+
+ .navItem:hover {
+     color: #2563eb !important;
+ }
+
+ .navItem:hover::after {
+     width: 50%;
+     left: 50%;
+     transform: translateX(-50%);
+ }
