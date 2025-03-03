@@ -136,7 +136,7 @@ export default function CustomTable({ columns, data, renderFunction, rowsPerPage
           console.log('response', response);
 
 
-          if (response.ok) {
+          if (response.status === 200) {
             form.reset(); // Reset the form after successful submission
             // setIsLoading(true)
 

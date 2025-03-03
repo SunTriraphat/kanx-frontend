@@ -95,9 +95,11 @@ export default function App() {
         try {
             // const response = await axios.get(`${API_URL}showData`);
             // const response = await axios.get(`${API_URL}getdata_main`);
-            // const response = await axios.get(`${API_URL}getall_user`);
+            const response = await axios.get(`${API_URL}/user/all`);
+            console.log('response', response);
+            
             // const responseMenu = await axios.get(`${API_URL}getall_menu`);
-            // setData(response.data);
+            setData(response.data.users);
             // setAllMenu(responseMenu.data);
             setIsLoading(false)
         } catch (error) {
@@ -204,8 +206,8 @@ export default function App() {
             case "actions":
                 return (
                     <div className="relative flex items-center gap-2 justify-end">
-                        <Button size="sm" onClick={() => openModal(item["id"])} color="primary">Edit</Button>
-                        <Button size="sm" onClick={() => openPermissionModal(item["id"])} color="primary">Permission</Button>
+                        {/* <Button size="sm" onClick={() => openModal(item["id"])} color="primary">Edit</Button>
+                        <Button size="sm" onClick={() => openPermissionModal(item["id"])} color="primary">Permission</Button> */}
                     </div>
                 );
 

@@ -34,7 +34,7 @@ export default function CustomModal({
         </button>
 
         {/* Modal content */}
-        <div className="mb-4 max-h-[500px] overflow-y-auto overflow-x-auto whitespace-nowrap">
+        <div className="mb-4 max-h-[400px] overflow-y-auto overflow-x-auto whitespace-nowrap">
           {children}
         </div>
 

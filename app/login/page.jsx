@@ -86,7 +86,7 @@ function Login() {
         //   password: values.password,
         // });
         const response = await axios.post(
-          `${API_URL}/auth/login`,
+          `${API_URL}/fe/auth/login`,
           values,
         );
        

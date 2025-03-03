@@ -1,8 +1,8 @@
 export type SiteConfig = typeof siteConfig;
 
 export const siteConfig = {
-  name: "apregist",
-  description: "apregist.",
+  name: "kan-x",
+  description: "kan-x",
   navItems: [
     {
       label: "Home",

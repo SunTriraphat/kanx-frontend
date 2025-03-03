@@ -80,25 +80,11 @@ function Navbar() {
           >
             <ul className="lg:items-center sm:items-start flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
               <li>
-                <Link href="/informationForm" className={style.navItem}>
-                  แจ้งประกันภัย
+                <Link href="/contractForm" className={style.navItem}>
+                  ข้อมูลลูกค้า
                 </Link>
               </li>
-              <li>
-                <Link href="/registeredForm" className={style.navItem}>
-                  จดทะเบียน
-                </Link>
-              </li>
-              <li>
-                <Link href="/report" className={style.navItem}>
-                  รายงาน
-                </Link>
-              </li>
-              <li>
-                <Link href="/dashBoard" className={style.navItem}>
-                  แดชบอร์ด
-                </Link>
-              </li>
+
               <li className="relative inline-block text-left">
                 <button
                   type="button"
@@ -125,9 +111,8 @@ function Navbar() {
                   </svg>
                 </button>
                 <div
-                  className={`absolute left-0 transform translate-x-0 md:left-auto md:right-0 z-10 w-48 mt-2 origin-top-right rounded-md bg-white dark:bg-gray-800 shadow-lg ring-1 ring-black ring-opacity-5 ${
-                    isOpenOther ? "block" : "hidden"
-                  }`}
+                  className={`absolute left-0 transform translate-x-0 md:left-auto md:right-0 z-10 w-48 mt-2 origin-top-right rounded-md bg-white dark:bg-gray-800 shadow-lg ring-1 ring-black ring-opacity-5 ${isOpenOther ? "block" : "hidden"
+                    }`}
                 >
                   <ul className="py-1">
                     <li>
@@ -138,14 +123,7 @@ function Navbar() {
                         จัดการสิทธ์
                       </Link>
                     </li>
-                    <li>
-                      <Link
-                        href="/manageDealerCode"
-                        className="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-600"
-                      >
-                        จัดการดีลเลอร์
-                      </Link>
-                    </li>
+
                   </ul>
                 </div>
               </li>
